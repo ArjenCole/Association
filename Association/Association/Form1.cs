@@ -73,6 +73,14 @@ namespace Association
                 MyReg2.SetValue("", strIcoPath + ",0", RegistryValueKind.String);
 
                 MyReg.Close();
+
+                //删除当前用户的关联
+                try
+                {
+                    Registry.CurrentUser.DeleteSubKey(TXTextension.Text);
+                }
+                catch
+                { }
                 //删除系统图标缓存
                 System.Diagnostics.Process.Start(System.Windows.Forms.Application.StartupPath + @"\Res\RefreshIconCache.bat");
                 RefreshSystem();

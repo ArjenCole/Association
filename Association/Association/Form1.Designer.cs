@@ -61,6 +61,7 @@
             // 
             // PBfileIco
             // 
+            this.PBfileIco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PBfileIco.Location = new System.Drawing.Point(40, 253);
             this.PBfileIco.Name = "PBfileIco";
             this.PBfileIco.Size = new System.Drawing.Size(100, 100);
